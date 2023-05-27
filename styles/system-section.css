@@ -1,0 +1,103 @@
+.are-quadrado-saida {
+    background: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 32px;
+    height: 100%;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.are-foto-quadrado-saida {
+    width: calc(100% - 32px);
+}
+
+.mensagem-nao-encontrada {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mensagem-nao-encontrada h1 {
+    word-break: break-word;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+}
+
+.mensagem-nao-encontrada p {
+    word-break: break-word;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+    
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mensagem-encontrada {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.are-texto-saida {
+    height: 100%;
+    resize: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.are-texto-saida:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.mensagem-encontrada #botao-copiar {
+    width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+    .are-quadrado-saida {
+        min-height: 11.33vh;
+        height: 100%; 
+    }
+    .are-foto-quadrado-saida {
+        display: none;
+    }
+    .mensagem-encontrada {
+        height: 100%;
+        gap: 32px;
+    }
+    #botao-copiar {
+        width: 624px;
+    }   
+}

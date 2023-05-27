@@ -1,0 +1,41 @@
+.botoes {
+    width: 48%;
+    /*max-width: 328px;*/
+    box-sizing: border-box;
+    padding: 24px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #D8DFE8;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+
+    /* Fonte */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.botoes:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+    .botoes {
+        width: 48%;
+    }
+    section {
+        padding-top: 64px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .botoes{
+        width: 100%;
+    }
+    section {
+        padding: 56px 16px 0px 16px;
+    }
+}
