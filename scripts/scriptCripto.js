@@ -60,22 +60,25 @@ function criptografar() {
 
 function descriptografar() {
     var newString = textoUsuario.value;
-    newString = newString.replace(/enter/gi,"e");
+    if(testeRegex(newString)) { 
+         
+newString = newString.replace(/enter/gi,"e");
     newString = newString.replace(/imes/gi,"i");
     newString = newString.replace(/ai/gi,"a");
     newString = newString.replace(/ober/gi,"o");
-    newString = newString.replace(/ufat/gi,"u");
-    textoSaida.textContent = newString;
-
-    if (newString.length > 2){
-        divMensagemNaoOk.style.display = 'none';
-        divMensagemOk.style.display = 'flex';
-        autoResizeTextare(textoSaida);
-    }
-    else {
-        divMensagemNaoOk.style.display = 'flex';
-        divMensagemOk.style.display = 'none';
-    }
+    newString = newString.replace(/ufat/gi,"u");      
+         textoSaida.textContent = newString; 
+      
+         if (newString.length > 2){ 
+             divMensagemNaoOk.style.display = 'none'; 
+             divMensagemOk.style.display = 'flex'; 
+             autoResizeTextare(textoSaida); 
+         } 
+         else { 
+             divMensagemNaoOk.style.display = 'flex'; 
+             divMensagemOk.style.display = 'none'; 
+         } 
+     }
 }
 
 function copiar() {
